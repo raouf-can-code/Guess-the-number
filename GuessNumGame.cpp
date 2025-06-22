@@ -39,7 +39,7 @@ int main(){
 
     std::cout << "You have choosen" << dif << " diffuclty\n now guess a number between " << range << ":\n";
     do{
-        getline(std::cin, guess);
+        std::cin >> guess;
         try{
             int guessNum = std::stoi(guess);
             if(guessNum == answer){
